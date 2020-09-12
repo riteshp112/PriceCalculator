@@ -2,19 +2,14 @@
 <head>  
 </head>  
 <body>  
-   <object 
-  classid="clsid:CAFEEFAC-0015-0000-0000-ABCDEFFEDCBA"
-  style="height: 500px; width: 700px;">
-  <param name="code" value="Home.class">
-    <comment>
-      <embed code="Home.class"
-        type="application/x-java-applet"
-        height="500" width="700">
-        <noembed>
-          This browser appears to lack support for Java Applets.
-        </noembed>
-      </embed>
-    </comment>
-  </object>
+   <script src="http://www.java.com/js/deployJava.js"></script>
+<script>
+    var attributes = {
+        code:'FinalProject.class',
+    width:700, height:500} ;
+    var parameters = {}; // does the Applet take parameters?
+    var version = '1.6' ; // does the Applet require a minimum version of Java
+    deployJava.runApplet(attributes, parameters, version);
+</script>
  </body>  
 </html>
