@@ -1,15 +1,12 @@
-<html>
-<head>  
-</head>  
-<body>  
-   <script src="http://www.java.com/js/deployJava.js"></script>
-<script>
-    var attributes = {
-        code:'/src/examples/Home.class',
-    width:700, height:500} ;
-    var parameters = {}; // does the Applet take parameters?
-    var version = '1.6' ; // does the Applet require a minimum version of Java
-    deployJava.runApplet(attributes, parameters, version);
-</script>
- </body>  
-</html>
+<section id="main_content">
+            <script>
+                var attributes = {codebase: 'cubesorter/me/nrubin29/cubesorter/',
+                    code: 'Viewer.class',
+                    archive: 'cubesorter.jar',
+                    width: '800',
+                    height: '600'};
+                var parameters = {java_arguments: '-Xmx256m'}; // customize per your needs
+                var version = '1.5'; // JDK version
+                deployJava.runApplet(attributes, parameters, version);
+            </script>
+        </section>
