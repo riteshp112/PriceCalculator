@@ -2,12 +2,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 class Home extends JFrame implements ActionListener
-{ System.setProperty("java.awt.headless", "false"); //Disables headless
-JLabel j;
+{ JLabel j;
     JLabel j1,j2;
     JButton cp,au,cu,ex;
     public Home()
-    { j1=new JLabel("P R I C E       C A L C U L A T O R");  
+    { System.setProperty("java.awt.headless", "false"); //Disables headless
+j1=new JLabel("P R I C E       C A L C U L A T O R");  
       j1.setBounds(355,10,800,100);
 j1.setFont(new Font("Serif",Font.PLAIN,50));
 j1.setForeground(Color.WHITE);
