@@ -7,11 +7,11 @@ JLabel j;
     JLabel j1,j2;
     JButton cp,au,cu,ex;
     public Home()
-    { System.setProperty("java.awt.headless", "false"); //Disables headless
-j1=new JLabel("P R I C E       C A L C U L A T O R");  
+    { j1=new JLabel("P R I C E       C A L C U L A T O R");  
       j1.setBounds(355,10,800,100);
 j1.setFont(new Font("Serif",Font.PLAIN,50));
 j1.setForeground(Color.WHITE);
+System.setProperty("java.awt.headless", "false"); //Disables headless
 j =new JLabel(new ImageIcon("bk.jpg"));
         j.setBounds(0,0,1200,700);
 j.add(j1);
