@@ -101,3 +101,56 @@ class Price
           bk.add(tf1);
           tf1.setBounds(245,230,100,50);
           tf1.repaint();
+JTextField tf=new JTextField(10);
+          bk.add(tf);
+          tf.setBounds(245,60,100,50);
+          tf.repaint();
+          j.add(bk);
+          j.setSize(449,599);
+          j.setSize(450,600);
+b.addActionListener(new ActionListener(){
+    public void actionPerformed(ActionEvent e)
+          {
+              if(e.getSource()==b)
+              {
+                   if(c1.getSelectedItem().equals("Samsung"))
+                   {
+                      if(c2.getSelectedItem().equals("32 inch"))
+                      r1=30299;
+                      else
+                      r1=39999;
+                   }
+              else
+              {
+               if(c2.getSelectedItem().equals("32 inch"))
+               r1=32299;
+               else
+               r1=44890;
+             }
+              if(c12.getSelectedItem().equals("Samsung"))
+              {
+                 if(c22.getSelectedItem().equals("192"))
+                 r2=16490;
+                 else
+                 r2=23490;
+              }
+              else
+              {
+                if(c22.getSelectedItem().equals("192"))
+                r2=14490;
+                else
+                r2=23490;
+              }
+              qt1=Float.parseFloat(tf.getText());
+              qt2=Float.parseFloat(tf1.getText());
+              tp=r1*qt1;
+              fp=r2*qt2;
+              top=tp+fp;
+              ta1.setText(" "+top);
+              //  System.out.println(" "+top);
+              }
+}
+        });
+}
+public static void main(String args[]) 
+{     new Price();}}
