@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+System.setProperty("java.awt.headless", "false"); //Disables headless
 class Home extends JFrame implements ActionListener
 { JLabel j;
     JLabel j1,j2;
