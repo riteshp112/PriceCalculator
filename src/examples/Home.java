@@ -2,7 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 class Home extends JFrame implements ActionListener
-{ JLabel j;
+{ System.setProperty("java.awt.headless", "false"); //Disables headless
+JLabel j;
     JLabel j1,j2;
     JButton cp,au,cu,ex;
     public Home()
@@ -69,7 +70,8 @@ ex.addActionListener(this);
        }
 
     public static void main(String args[])
-    {System.setProperty("java.awt.headless", "false");
+    {
         new Home();
+        
     }
 }
